@@ -243,4 +243,13 @@ factsArea.innerHTML = facts[randomFactIndex];
 factsArea.style.color = "blue"
 factsArea.style.background = "yellow"
 
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click" , function(e){
+    factsArea.innerHTML = "";
+    randomFactIndex = Math.floor(Math.random(0,100)*100);
+    factsArea.innerHTML = facts[randomFactIndex];
+    console.log(facts[randomFactIndex]);
+})
+
 
